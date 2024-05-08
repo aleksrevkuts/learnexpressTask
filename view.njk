@@ -1,0 +1,29 @@
+{% extends 'partials/layout.njk' %}
+{% block title %}Add Post{% endblock %}
+{% block content %}
+<table class="table">
+    <tbody>
+        <tr>
+            <th>ID</th>
+            <td>{{post.id}}</td>
+        </tr>
+        <tr>
+            <th>Title</th>
+            <td>{{post.title}}</td>
+        </tr>
+        <tr>
+            <th>Body</th>
+            <td>{{post.body}}</td>
+        </tr>
+        <tr>
+            <th>CreatedAt</th>
+            <td>{{post.createdAt}}</td>
+        </tr>
+        <tr>
+            <th>UpdatedAt</th>
+            <td>{{post.updatedAt}}</td>
+        </tr>
+        </tbody>
+</table>
+<a type="button" class="btn btn-primary" href="/posts">Return</a>
+{% endblock %}
